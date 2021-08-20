@@ -1,0 +1,186 @@
+/* Max Width 1300px and container 1000px */
+@media only screen and (max-width: 1050px) {
+    .container {
+        width: 900px;
+    }
+    .container .titles h2 {
+        font-size: 30px;
+    }
+    .output .title h3 {
+        font-size: 23px;
+    }
+    .output .haveNeed p {
+        font-size: 16px;
+    }
+
+    form {
+        padding: 5px 10px 5px 5px;
+    }
+    .form .info-1 {
+        line-height: 29px;
+        font-size: 20px;
+    }
+    .form .info-1 input {
+        width: 90px;
+    }
+    form .button-input {
+        grid-template-columns: 35px 135px 35px;
+    }
+    form .button-input input {
+        height: 28px;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .container {
+        width: 780px;
+    }
+    .form .info-1 {
+        font-size: 18px;
+    }
+    .form .info-1 input {
+        font-size: 18px;
+        width: 80px;
+    }
+    .output .title h3 {
+        font-size: 21px;
+    }
+    .horizontal-progress .move {
+        font-size: 17px;
+    }
+    .horizontal-progress .all-bar > div {
+        padding: 12px 0px 6px 0px;
+        font-size: 16px;
+    }
+    .horizontal-progress .describe h3 {
+        font-size: 21px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .container {
+        width: 650px;
+    }
+    .container .titles h2 {
+        font-size: 26px;
+    }
+    .container .titles p {
+        font-size: 15px;
+    }
+    .container .hidden-informations {
+        padding: 20px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 22px;
+    }
+    .container .sub-container {
+        grid-template-columns: 1.3fr 2fr;
+    }
+    .form .info-1 {
+        font-size: 17px;
+    }
+    .form .info-1 .input-div:first-child input {
+        width: 36px;
+    }
+    .form .info-1 input {
+        font-size: 17px;
+        width: 74px;
+    }
+    form h5 {
+        font-size: 14px;
+    }
+    form .info-3 .info-3-part1 h4 {
+        font-size: 17px;
+    }
+    form .button-input input {
+        font-size: 16px;
+        height: 24px;
+    }
+    form .button-input button {
+        font-size: 11px;
+    }
+    .output .title h3 {
+        font-size: 17px;
+    }
+    .output .haveNeed {
+        grid-template-columns: 110px 110px;
+    }
+    .output .haveNeed p {
+        font-size: 15px;
+    }
+    .output .have-amount,
+    .output .need-amount {
+        font-size: 16px;
+    }
+    .horizontal-progress .describe h3 {
+        font-size: 19px;
+    }
+    .horizontal-progress .all-bar > div {
+        font-size: 15px;
+    }
+    .move .content {
+        min-width: 150px;
+        font-size: 16px;
+        padding: 2px 0px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .container {
+        width: auto;
+        padding: 20px 40px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .container .sub-container {
+        display: block;
+        height: auto;
+    }
+    .sub-container .output {
+        height: auto;
+    }
+    form {
+        padding: 5px 10px 5px 10px;
+    }
+    .form {
+        background-color: #f4f4f4;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .container {
+        padding: 20px;
+    }
+    .container .titles h2 {
+        font-size: 23px;
+    }
+    .output .haveNeed {
+        grid-template-columns: 95px 95px;
+    }
+    .output .have-amount,
+    .output .need-amount {
+        font-size: 15px;
+    }
+    .output .haveNeed p {
+        font-size: 14px;
+    }
+    .horizontal-progress .all-bar > div {
+        font-size: 14px;
+    }
+    .horizontal-progress .describe h3 {
+        font-size: 18px;
+    }
+    .horizontal-progress .describe p {
+        font-size: 14px;
+        color: #353535;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .container {
+        padding: 10px;
+    }
+    form {
+        padding: 5px;
+    }
+    form > div {
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Retirement Calculator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="titles">
+        <h2>Retirement Calculator</h2>
+        <p>
+          Tell us a few things about yourself and this calculator will show
+          whether you're on track for the retirement you want.
+        </p>
+      </div>
+
+      <div class="sub-container">
+        <div class="form">
+          <form action="" id="form">
+            <!-- Info Section 01 -->
+            <div class="info-1">
+              I am
+              <div class="input-div">
+                <input type="number" id="age" value="25" />
+              </div>
+              years old, my pre-tax Yearly income is
+              <div class="input-div">
+                <input type="number" id="yearlyIncome" value="200000" />
+              </div>
+              Taka(BDT) and I have current savings of
+              <div class="input-div">
+                <input type="number" id="currentSavings" value="100000" />
+              </div>
+              Taka(BDT).
+              <small class="errors errors1"></small>
+              <small class="errors errors2"></small>
+              <small class="errors errors3"></small>
+            </div>
+
+            <!-- Info Section 02 -->
+            <div class="info-2">
+              <div class="monthly-savings">
+                <h5>Every month I save (BDT)</h5>
+                <!-- Input with decrement and increment button -->
+                <div class="button-input">
+                  <div class="decrement">
+                    <button class="decrease">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                  <input type="number" id="monthlySavings" value="5000" />
+                  <div class="increment">
+                    <button class="increase">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <small>30% of my monthly income</small>
+              </div>
+            </div>
+
+            <div class="info-3">
+              <!-- part2 collapse or open button -->
+              <div class="info-3-part1">
+                <h4>Optional</h4>
+                <button><i class="fas fa-chevron-up"></i></button>
+              </div>
+
+              <!-- It will be collapse by default -->
+              <div class="info-3-part2 hidden">
+                <!-- Monthly Retirement Spending Input -->
+                <div class="monthly-spending">
+                  <h5>Monthly retirement spending (BDT)</h5>
+                  <div class="button-input">
+                    <div class="decrement">
+                      <button class="decrease">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </div>
+                    <input type="number" id="monthlySpendings" value="20000" />
+                    <div class="increment">
+                      <button class="increase">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Retirement age -->
+                <div class="retire-age">
+                  <h5>I want to retire at age</h5>
+                  <div class="button-input">
+                    <div class="decrement">
+                      <button class="decrease">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </div>
+                    <input type="number" id="retireAge" value="65" />
+                    <div class="increment">
+                      <button class="increase">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <small></small>
+                </div>
+
+                <!-- Life expectancy/Death Age -->
+                <div class="death-age">
+                  <h5>Life expectancy</h5>
+                  <div class="button-input">
+                    <div class="decrement">
+                      <button class="decrease">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </div>
+                    <input type="number" id="deathAge" value="85" />
+                    <div class="increment">
+                      <button class="increase">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <small></small>
+                </div>
+
+                <!-- Investment Rate of Return -->
+                <div class="investment-rate">
+                  <h5>Investment Rate of Return (%)</h5>
+                  <div class="button-input">
+                    <div class="decrement">
+                      <button class="decrease">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </div>
+                    <input
+                      type="number"
+                      id="investmentRate"
+                      value="6.0"
+                      step="any"
+                    />
+                    <div class="increment">
+                      <button class="increase">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <small></small>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="output">
+          <!-- Vertically Up Down progress bar -->
+          <div class="verticale-progress">
+            <div class="title">
+              <h3>
+                How much will you nedd to retire at
+                <span class="retireAgeShow">65</span>?
+              </h3>
+            </div>
+
+            <!-- This div has all bar element -->
+            <div class="haveNeed">
+              <!-- You will have bar -->
+              <div class="have">
+                <!-- Main Bar -->
+                <div class="have-bar">
+                  <!-- Amount Show -->
+                  <div class="have-amount">10.62M</div>
+                  <!-- Sub bar -->
+                  <div class="sub-have-bar"></div>
+                </div>
+                <p>You will have about</p>
+              </div>
+              <!-- You will need bar -->
+              <div class="need">
+                <div class="need-bar">
+                  <div class="need-amount">12.96M</div>
+
+                  <div class="sub-need-bar"></div>
+                </div>
+                <p>You will need about</p>
+              </div>
+            </div>
+            <hr />
+          </div>
+
+          <!-- Horizontally Progress bar -->
+          <div class="horizontal-progress">
+            <!-- Title of the div -->
+            <div class="title">
+              <h3>Retirement savings score</h3>
+            </div>
+            <!-- Move bar -->
+            <div class="score-bars">
+              <!-- It will move during progress -->
+              <div class="move">
+                <div class="space"></div>
+                <div class="content">
+                  You're <span class="parcent">82%</span> to goal
+                </div>
+              </div>
+              <!-- Icon -->
+              <!-- <div class="icon">
+                            <i class="fas fa-sort-down"></i>
+                        </div> -->
+              <div class="icon">
+                <div class="iconSpace"></div>
+                <div class="iconContent">
+                  <i class="fas fa-sort-down"></i>
+                </div>
+              </div>
+              <!-- Four Score Bar -->
+              <div class="all-bar">
+                <div class="attention">Needs attention</div>
+                <div class="onWay">On your way</div>
+                <div class="gettingClose">Gettings close</div>
+                <div class="onTrack">On track</div>
+              </div>
+              <div class="describe">
+                <div class="attention-describe hidden">
+                  <h3>
+                    Let's get Future You
+                    <span class="color"> out of the red. </span>
+                  </h3>
+                  <p>
+                    There are a few steps you could take to jumpstart your
+                    retirement savings. Create an account to reduce your bills,
+                    eliminate debt and grow your money.
+                  </p>
+                </div>
+                <div class="onWay-describe hidden">
+                  <h3>
+                    Solid start, but let's
+                    <span class="color">close the gap.</span>
+                  </h3>
+                  <p>
+                    You’re off to the races, but have some catching up to do.
+                    Sign up for NerdWallet to get a detailed forecast, a
+                    personalized plan and notifications to stay on top of your
+                    finances.
+                  </p>
+                </div>
+                <div class="gettingClose-describe">
+                  <h3>
+                    You're close. Let's
+                    <span class="color">get you on track.</span>
+                  </h3>
+                  <p>
+                    Just a few finishing touches and you'll be on your way.
+                    Create an account to project your wealth and find
+                    opportunities to grow your dough.
+                  </p>
+                </div>
+                <div class="onTrack-describe hidden">
+                  <h3>
+                    You're rocking it. Can you
+                    <span class="color">boost it even more?</span>
+                  </h3>
+                  <p>
+                    Could your future be any brighter? Let’s find out. Create an
+                    account to see opportunities to grow your savings, detect
+                    hidden fees and track your future wealth.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="hideIt"></span>
+  </body>
+
+  <script src="app.js"></script>
+  <!-- <script src="app.js"></script> -->
+</html>
+
+<!-- Author= Md. Abu Salman
+Copyright- Salman Noushad 
+fb link- fb.com/salman.fci
+linkedin-https://www.linkedin.com/in/md-abu-salman-4043401b8/
+-->
