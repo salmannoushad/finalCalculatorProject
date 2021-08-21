@@ -67,12 +67,7 @@ form > div {
     line-height: 30px;
     font-size: 22px;
 }
-.info-1 .errors {
-    display: block;
-    font-size: 12px;
-    color: red;
-    line-height: 18px;
-}
+
 .form .info-1 .input-div {
     display: inline-block;
 }
@@ -130,6 +125,17 @@ form .button-input button {
     border: 1px solid #b1b3b5;
     cursor: pointer;
 }
+.info-2 small {
+    display: block;
+    margin-left: 18px;
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #383838;
+}
+.info-2 .hidden {
+    display: none;
+}
 
 form .info-3 .info-3-part1 h4,
 form .info-3 .info-3-part1 button {
@@ -158,13 +164,6 @@ form .info-3 .info-3-part2 > div {
 }
 form .info-3 .info-3-part2 > div:last-child {
     margin-bottom: 0px;
-}
-
-.info-2 small {
-    margin-left: 18px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #383838;
 }
 
 /* Output */
@@ -375,3 +374,7 @@ form .info-3 .info-3-part2 > div:last-child {
 }
 
 /* Fixing */
+small.errors {
+    display: block;
+    color: red;
+}

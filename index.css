@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto&family=Sofia&display=swap");
+
+:root {
+  --primary-color: #45ccb8;
+  --light-gray: #2b3032a1;
+  --border: #2b303218;
+  --text-color: #ff686b;
+  --roboto: "Roboto", Sans-serif;
+  --gugi: "Gugi", cursive;
+  --sofia: "Sofia", cursive;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.secondportion1 {
+  border: 1px solid #45ccb8;
+  margin: 3px;
+}
+
+.secondportion2 {
+  border: 1px solid #ff686b;
+  margin: 3px;
+}
+
+.inputsAgeIncome {
+}
