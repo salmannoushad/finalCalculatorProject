@@ -1,380 +1,380 @@
 @import url("https://fonts.googleapis.com/css2?family=Bentham&display=swap");
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    /* background-color: #f3f3f3; */
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  /* background-color: #f3f3f3; */
 }
 
 .container {
-    width: 1000px;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 50px;
+  width: 1000px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 50px;
 }
 .container .titles {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .container .titles h2 {
-    /* font-family: Bentham; */
-    font-size: 32px;
-    letter-spacing: 1px;
-    word-spacing: 5px;
-    margin-bottom: 10px;
+  /* font-family: Bentham; */
+  font-size: 32px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  margin-bottom: 10px;
 }
 
 .container .hidden-informations {
-    padding: 20px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 24px;
+  padding: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 24px;
 }
 .container .hidden-informations p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* Sub-Container */
 .container .sub-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    border: 1px solid #c7c7c7;
-    height: 85vh;
-    grid-gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid #c7c7c7;
+  height: 85vh;
+  grid-gap: 15px;
 }
 
 /* Form */
 .form {
-    /* grid-column: 1/2; */
-    background: #f7f7f7;
-    /* overflow-x: scroll; */
-    overflow-y: scroll;
+  /* grid-column: 1/2; */
+  background: #f7f7f7;
+  /* overflow-x: scroll; */
+  overflow-y: scroll;
 }
 form {
-    color: #212121;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
-    padding: 8px 16px 8px 8px;
+  color: #212121;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  padding: 8px 16px 8px 8px;
 }
 form > div {
-    background-color: white;
-    border: 1px solid #d8d9da;
-    padding: 15px 10px;
-    margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #d8d9da;
+  padding: 15px 10px;
+  margin-bottom: 10px;
 }
 .form .info-1 {
-    line-height: 30px;
-    font-size: 22px;
+  line-height: 30px;
+  font-size: 22px;
 }
 
 .form .info-1 .input-div {
-    display: inline-block;
+  display: inline-block;
 }
 .form .info-1 input {
-    width: 100px;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid black;
-    text-align: center;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+  width: 100px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .form .info-1 .input-div:first-child input {
-    width: 40px;
+  width: 40px;
 }
 
 /* Remove up down spin button */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 input[type="number"] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 form h5 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 form .button-input {
-    display: grid;
-    grid-template-columns: 45px 150px 45px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 45px 150px 45px;
+  justify-content: center;
 }
 form input {
-    color: #292929;
+  color: #292929;
 }
 
 form .button-input input {
-    height: 30px;
-    border: 1px solid #b1b3b5;
-    outline: none;
-    border-left: none;
-    border-right: none;
-    padding: 5px 10px;
-    font-size: 18px;
-    text-align: center;
+  height: 30px;
+  border: 1px solid #b1b3b5;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  text-align: center;
 }
 form .button-input .decrement,
 form .button-input .increment {
-    display: inherit;
+  display: inherit;
 }
 form .button-input button {
-    color: #212121;
-    background-color: white;
-    border: 1px solid #b1b3b5;
-    cursor: pointer;
+  color: #212121;
+  background-color: white;
+  border: 1px solid #b1b3b5;
+  cursor: pointer;
 }
 .info-2 small {
-    display: block;
-    margin-left: 18px;
-    margin-top: 6px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #383838;
+  display: block;
+  margin-left: 18px;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #383838;
 }
 .info-2 .hidden {
-    display: none;
+  display: none;
 }
 
 form .info-3 .info-3-part1 h4,
 form .info-3 .info-3-part1 button {
-    display: inline-block;
+  display: inline-block;
 }
 form .info-3 .info-3-part1 button {
-    float: right;
-    background-color: white;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    cursor: pointer;
+  float: right;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
 }
 form .info-3 .info-3-part2 {
-    margin-top: 20px;
-    display: block;
+  margin-top: 20px;
+  display: block;
 }
 
 form .info-3 .info-3-part2.hidden {
-    margin-top: 0px;
-    display: none;
+  margin-top: 0px;
+  /* display: none; */
 }
 
 form .info-3 .info-3-part2 > div {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 form .info-3 .info-3-part2 > div:last-child {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 /* Output */
 .sub-container .output {
-    /* grid-column: 2/-1; */
-    /* margin-left: 20px; */
-    height: 80vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  /* grid-column: 2/-1; */
+  /* margin-left: 20px; */
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 
-    padding: 10px 10px 10px;
+  padding: 10px 10px 10px;
 }
 
 .output hr {
-    border-top: 1px solid #c7c7c7;
-    width: 95%;
-    margin: auto;
+  border-top: 1px solid #c7c7c7;
+  width: 95%;
+  margin: auto;
 }
 .output .title h3 {
-    color: #212121;
-    font-size: 25px;
-    margin-top: 20px;
+  color: #212121;
+  font-size: 25px;
+  margin-top: 20px;
 }
 
 /* verticale-progress */
 .verticale-progress .title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .output .haveNeed p {
-    font-size: 18px;
-    text-align: center;
-    letter-spacing: 1px;
-    padding: 10px 0px;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 10px 0px;
 }
 .output .have-amount,
 .output .need-amount {
-    text-align: center;
-    background-color: white;
+  text-align: center;
+  background-color: white;
 }
 .output .haveNeed {
-    margin: auto;
+  margin: auto;
 
-    display: grid;
-    grid-template-columns: 130px 130px;
-    grid-gap: 30px;
-    justify-content: center;
-    align-items: end;
+  display: grid;
+  grid-template-columns: 130px 130px;
+  grid-gap: 30px;
+  justify-content: center;
+  align-items: end;
 }
 
 .output .have,
 .output .need {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .output .have-bar,
 .output .need-bar {
-    height: 140px;
-    /* height: 200px; */
+  height: 140px;
+  /* height: 200px; */
 }
 /*  */
 .output .have-bar {
-    /* border: 1px solid red; */
-    background-color: #1cacca;
-    position: relative;
+  /* border: 1px solid red; */
+  background-color: #fc6f56;
+  position: relative;
 }
 .output .sub-have-bar {
-    background-color: white;
-    transition: height 0.5s;
+  background-color: white;
+  transition: height 0.5s;
 
-    height: 18%;
+  height: 45%;
 }
 .output .have-amount {
-    position: absolute;
-    width: 100%;
-    background-color: transparent;
-    font-size: 18px;
-    transition: top 0.5s;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  font-size: 18px;
+  transition: top 0.5s;
 
-    top: -2%;
+  top: -2%;
 }
 /*  */
 .output .need-bar {
-    /* border: 1px solid red; */
-    background-color: rgb(143, 216, 50);
-    position: relative;
+  /* border: 1px solid red; */
+  background-color: rgb(143, 216, 50);
+  position: relative;
 }
 
 .output .sub-need-bar {
-    background-color: white;
-    transition: height 0.5s;
+  background-color: white;
+  transition: height 0.5s;
 
-    height: 0%;
+  height: 0%;
 }
 .output .need-amount {
-    position: absolute;
-    width: 100%;
-    background-color: transparent;
-    font-size: 18px;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  font-size: 18px;
 
-    transition: top 0.5s;
+  transition: top 0.5s;
 
-    top: -20%;
+  top: -20%;
 }
 
 /* horizontal-progress */
 .output .hidden {
-    display: none;
+  display: none;
 }
 .output .horizontal-progress h3 {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 .horizontal-progress .score-bars {
-    width: 95%;
-    margin: auto;
-    position: relative;
+  width: 95%;
+  margin: auto;
+  position: relative;
 }
 .horizontal-progress .move {
-    margin: 8px 0px;
-    text-align: center;
-    font-size: 18px;
-    color: #232323;
+  margin: 8px 0px;
+  text-align: center;
+  font-size: 18px;
+  color: #232323;
 
-    padding: 5px 0px;
-    width: 100%;
-    display: flex;
+  padding: 5px 0px;
+  width: 100%;
+  display: flex;
 }
 
 .horizontal-progress .move .space {
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: calc(52.727% - 12px);
-    transition: flex-basis 0.5s;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: calc(20.727% - 12px);
+  transition: flex-basis 0.5s;
 }
 .move .content {
-    min-width: 165px;
+  min-width: 165px;
 }
 
 .horizontal-progress .icon {
-    position: absolute;
-    top: 34px;
+  position: absolute;
+  top: 34px;
 
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 .horizontal-progress .iconSpace {
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 62.35%;
-    transition: flex-basis 0.5s;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 26.35%;
+  transition: flex-basis 0.5s;
 }
 .horizontal-progress .icon i {
-    font-size: 35px;
-    line-height: 0;
-    color: white;
+  font-size: 35px;
+  line-height: 0;
+  color: white;
 }
 
 .horizontal-progress .all-bar {
-    color: #151515;
-    display: grid;
-    grid-template-columns: 11fr 9fr 7fr 5fr;
-    grid-gap: 3px;
+  color: #151515;
+  display: grid;
+  grid-template-columns: 11fr 9fr 7fr 5fr;
+  grid-gap: 3px;
 }
 
 .horizontal-progress .all-bar > div {
-    text-align: center;
-    padding: 20px 0px 6px 0px;
-    border-radius: 5px;
-    font-size: 18px;
+  text-align: center;
+  padding: 20px 0px 6px 0px;
+  border-radius: 5px;
+  font-size: 18px;
 }
 .horizontal-progress .all-bar > div:first-child {
-    background-color: #fc6f56;
+  background-color: #fc6f56;
 }
 .horizontal-progress .all-bar > div:nth-child(2) {
-    background-color: #ffbf00;
+  background-color: #ffbf00;
 }
 .horizontal-progress .all-bar > div:nth-child(3) {
-    background-color: #1cacca;
+  background-color: #1cacca;
 }
 .horizontal-progress .all-bar > div:last-child {
-    background-color: #8fd832;
+  background-color: #8fd832;
 }
 
 .horizontal-progress .describe {
-    color: #1f1f1f;
-    margin-top: 20px;
+  color: #1f1f1f;
+  margin-top: 20px;
 }
 
 .horizontal-progress .describe h3 {
-    font-weight: 900;
-    margin-bottom: 10px;
-    font-size: 24px;
-    color: #2b2b2b;
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #2b2b2b;
 }
 .horizontal-progress .describe p {
-    font-size: 15px;
-    color: #353535;
+  font-size: 15px;
+  color: #353535;
 }
 .horizontal-progress .describe > div:first-child .color {
-    color: #fc6f56;
+  color: #fc6f56;
 }
 .horizontal-progress .describe > div:nth-child(2) .color {
-    color: #feca30;
+  color: #feca30;
 }
 .horizontal-progress .describe > div:nth-child(3) .color {
-    color: #1cacca;
+  color: #1cacca;
 }
 .horizontal-progress .describe > div:last-child .color {
-    color: #8bbd4b;
+  color: #8bbd4b;
 }
 
 /* Fixing */
 small.errors {
-    display: block;
-    color: red;
+  display: block;
+  color: red;
 }

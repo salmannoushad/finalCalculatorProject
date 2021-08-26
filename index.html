@@ -34,12 +34,12 @@
               <div class="input-div">
                 <input type="number" id="age" value="25" />
               </div>
-              years old, My monthly income is
+              years old, my monthly income is
               <div class="input-div">
                 <!-- <input type="number" id="yearlyIncome" value="200000"> -->
-                <input type="number" id="monthlyIncome" value="16667" />
+                <input type="number" id="monthlyIncome" value="100000" />
               </div>
-              Taka and I have current savings of
+              Taka and I have a current savings of
               <div class="input-div">
                 <input type="number" id="currentSavings" value="100000" />
               </div>
@@ -52,7 +52,7 @@
             <!-- Info Section 02 -->
             <div class="info-2">
               <div class="monthly-savings">
-                <h5>Every month I save (BDT)</h5>
+                <h5>Every month I can invest (BDT):</h5>
                 <!-- Input with decrement and increment button -->
                 <div class="button-input">
                   <div class="decrement">
@@ -74,23 +74,41 @@
 
             <div class="info-3">
               <!-- part2 collapse or open button -->
-              <div class="info-3-part1">
+              <!-- <div class="info-3-part1">
                 <h4>Optional</h4>
                 <button><i class="fas fa-chevron-up"></i></button>
-              </div>
+              </div> -->
 
               <!-- It will be collapse by default -->
               <div class="info-3-part2 hidden">
-                <!-- Monthly Retirement Spending Input -->
-                <div class="monthly-spending">
-                  <h5>Monthly retirement spending (BDT)</h5>
+                <!-- Retirement age -->
+                <div class="retire-age">
+                  <h5>I would like to retire at age:</h5>
                   <div class="button-input">
                     <div class="decrement">
                       <button class="decrease">
                         <i class="fas fa-minus"></i>
                       </button>
                     </div>
-                    <input type="number" id="monthlySpendings" value="20000" />
+                    <input type="number" id="retireAge" value="60" />
+                    <div class="increment">
+                      <button class="increase">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <small class="errors retireAgeError"></small>
+                </div>
+                <!-- Monthly Retirement Spending Input -->
+                <div class="monthly-spending">
+                  <h5>Monthly Expense after Retirement (BDT):</h5>
+                  <div class="button-input">
+                    <div class="decrement">
+                      <button class="decrease">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </div>
+                    <input type="number" id="monthlySpendings" value="50000" />
                     <div class="increment">
                       <button class="increase">
                         <i class="fas fa-plus"></i>
@@ -100,35 +118,16 @@
                   <small class="errors monthlyRetirementSpendingError"></small>
                 </div>
 
-                <!-- Retirement age -->
-                <div class="retire-age">
-                  <h5>I want to retire at age</h5>
-                  <div class="button-input">
-                    <div class="decrement">
-                      <button class="decrease">
-                        <i class="fas fa-minus"></i>
-                      </button>
-                    </div>
-                    <input type="number" id="retireAge" value="65" />
-                    <div class="increment">
-                      <button class="increase">
-                        <i class="fas fa-plus"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <small class="errors retireAgeError"></small>
-                </div>
-
                 <!-- Life expectancy/Death Age -->
                 <div class="death-age">
-                  <h5>Life expectancy</h5>
+                  <h5>Life Expectancy:</h5>
                   <div class="button-input">
                     <div class="decrement">
                       <button class="decrease">
                         <i class="fas fa-minus"></i>
                       </button>
                     </div>
-                    <input type="number" id="deathAge" value="85" />
+                    <input type="number" id="deathAge" value="72" />
                     <div class="increment">
                       <button class="increase">
                         <i class="fas fa-plus"></i>
@@ -140,7 +139,7 @@
 
                 <!-- Investment Rate of Return -->
                 <div class="investment-rate">
-                  <h5>Investment Rate of Return (%)</h5>
+                  <h5>Expected Rate of Return on Investment (%):</h5>
                   <div class="button-input">
                     <div class="decrement">
                       <button class="decrease">
@@ -150,7 +149,7 @@
                     <input
                       type="number"
                       id="investmentRate"
-                      value="6.0"
+                      value="7.0"
                       step="any"
                     />
                     <div class="increment">
@@ -171,7 +170,7 @@
           <div class="verticale-progress">
             <div class="title">
               <h3>
-                How much will you nedd to retire at
+                How much wealth will you need to retire at
                 <span class="retireAgeShow">65</span>?
               </h3>
             </div>
@@ -183,7 +182,7 @@
                 <!-- Main Bar -->
                 <div class="have-bar">
                   <!-- Amount Show -->
-                  <div class="have-amount">10.62M</div>
+                  <div class="have-amount">9.68M</div>
                   <!-- Sub bar -->
                   <div class="sub-have-bar"></div>
                 </div>
@@ -192,7 +191,7 @@
               <!-- You will need bar -->
               <div class="need">
                 <div class="need-bar">
-                  <div class="need-amount">12.96M</div>
+                  <div class="need-amount">18.03M</div>
 
                   <div class="sub-need-bar"></div>
                 </div>
@@ -206,7 +205,7 @@
           <div class="horizontal-progress">
             <!-- Title of the div -->
             <div class="title">
-              <h3>Retirement savings score</h3>
+              <h3>Retirement Planning Score:</h3>
             </div>
             <!-- Move bar -->
             <div class="score-bars">
@@ -214,7 +213,7 @@
               <div class="move">
                 <div class="space"></div>
                 <div class="content">
-                  You're <span class="percent">82%</span> to goal
+                  You're <span class="percent">54%</span> to your goal.
                 </div>
               </div>
               <!-- Icon -->
@@ -229,21 +228,22 @@
               </div>
               <!-- Four Score Bar -->
               <div class="all-bar">
-                <div class="attention">Needs attention</div>
-                <div class="onWay">On your way</div>
-                <div class="gettingClose">Gettings close</div>
-                <div class="onTrack">On track</div>
+                <div class="attention">Needs Attention</div>
+                <div class="onWay">On Your Way</div>
+                <div class="gettingClose">Getting Close</div>
+                <div class="onTrack">On Track</div>
               </div>
               <div class="describe">
                 <div class="attention-describe hidden">
                   <h3>
-                    Let's get Future You
-                    <span class="color"> out of the red. </span>
+                    Let's get your future
+                    <span class="color"> out of the red zone. </span>
                   </h3>
                   <p>
-                    There are a few steps you could take to jumpstart your
-                    retirement savings. Create an account to reduce your bills,
-                    eliminate debt and grow your money.
+                    Better late than never. A disciplined investment style can
+                    still get you to your desired financial destination. Invest
+                    in our ‘Bullet SIP Program’ to build your wealth and find an
+                    opportunity to grow your dough.
                   </p>
                 </div>
                 <div class="onWay-describe hidden">
@@ -253,9 +253,8 @@
                   </h3>
                   <p>
                     You’re off to the races, but have some catching up to do.
-                    Sign up for NerdWallet to get a detailed forecast, a
-                    personalized plan and notifications to stay on top of your
-                    finances.
+                    Invest in our ‘Bullet SIP Program’ to build your wealth to
+                    stay on top of your personal finances.
                   </p>
                 </div>
                 <div class="gettingClose-describe">
@@ -265,8 +264,8 @@
                   </h3>
                   <p>
                     Just a few finishing touches and you'll be on your way.
-                    Create an account to project your wealth and find
-                    opportunities to grow your dough.
+                    Invest in our ‘Bullet SIP Program’ to build your wealth and
+                    find an opportunity to grow your dough.
                   </p>
                 </div>
                 <div class="onTrack-describe hidden">
@@ -275,9 +274,9 @@
                     <span class="color">boost it even more?</span>
                   </h3>
                   <p>
-                    Could your future be any brighter? Let’s find out. Create an
-                    account to see opportunities to grow your savings, detect
-                    hidden fees and track your future wealth.
+                    Could your future be any brighter? Let’s find out. Invest in
+                    our ‘Bullet SIP Program’ to build your wealth to stay on top
+                    of your personal finances.
                   </p>
                 </div>
               </div>
