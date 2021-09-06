@@ -32,16 +32,31 @@
             <div class="info-1">
               I am
               <div class="input-div">
-                <input type="number" id="age" value="25" />
+                <input
+                  type="number"
+                  id="age"
+                  value="25"
+                  onkeydown="return (event.keyCode!=13)"
+                />
               </div>
               years old, my monthly income is
               <div class="input-div">
                 <!-- <input type="number" id="yearlyIncome" value="200000"> -->
-                <input type="number" id="monthlyIncome" value="100000" />
+                <input
+                  type="number"
+                  id="monthlyIncome"
+                  value="100000"
+                  onkeydown="return (event.keyCode!=13)"
+                />
               </div>
               Taka and I have a current savings of
               <div class="input-div">
-                <input type="number" id="currentSavings" value="100000" />
+                <input
+                  type="number"
+                  id="currentSavings"
+                  value="100000"
+                  onkeydown="return (event.keyCode!=13)"
+                />
               </div>
               Taka.
               <small class="errors currAgeError"></small>
@@ -60,14 +75,19 @@
                       <i class="fas fa-minus"></i>
                     </button>
                   </div>
-                  <input type="number" id="monthlySavings" value="5000" />
+                  <input
+                    type="number"
+                    id="monthlySavings"
+                    value="5000"
+                    onkeydown="return (event.keyCode!=13)"
+                  />
                   <div class="increment">
                     <button class="increase">
                       <i class="fas fa-plus"></i>
                     </button>
                   </div>
                 </div>
-                <small class="incomePercent">30% of my monthly income</small>
+                <small class="incomePercent">5% of my monthly income</small>
                 <small class="errors monthlySaveError"></small>
               </div>
             </div>
@@ -90,7 +110,12 @@
                         <i class="fas fa-minus"></i>
                       </button>
                     </div>
-                    <input type="number" id="retireAge" value="60" />
+                    <input
+                      type="number"
+                      id="retireAge"
+                      value="60"
+                      onkeydown="return (event.keyCode!=13)"
+                    />
                     <div class="increment">
                       <button class="increase">
                         <i class="fas fa-plus"></i>
@@ -108,7 +133,12 @@
                         <i class="fas fa-minus"></i>
                       </button>
                     </div>
-                    <input type="number" id="monthlySpendings" value="50000" />
+                    <input
+                      type="number"
+                      id="monthlySpendings"
+                      value="50000"
+                      onkeydown="return (event.keyCode!=13)"
+                    />
                     <div class="increment">
                       <button class="increase">
                         <i class="fas fa-plus"></i>
@@ -127,7 +157,12 @@
                         <i class="fas fa-minus"></i>
                       </button>
                     </div>
-                    <input type="number" id="deathAge" value="72" />
+                    <input
+                      type="number"
+                      id="deathAge"
+                      value="72"
+                      onkeydown="return (event.keyCode!=13)"
+                    />
                     <div class="increment">
                       <button class="increase">
                         <i class="fas fa-plus"></i>
@@ -151,6 +186,7 @@
                       id="investmentRate"
                       value="7.0"
                       step="any"
+                      onkeydown="return (event.keyCode!=13)"
                     />
                     <div class="increment">
                       <button class="increase">
