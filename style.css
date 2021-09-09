@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bentham&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
   /* background-color: #f3f3f3; */
@@ -46,26 +47,29 @@
 /* Form */
 .form {
   /* grid-column: 1/2; */
-  background: #f7f7f7;
+  background: #383834;
   /* overflow-x: scroll; */
   overflow-y: scroll;
 }
 form {
-  color: #212121;
+  color: #fff;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   padding: 8px 16px 8px 8px;
 }
 form > div {
-  background-color: white;
+  background-color: #4b4b47;
   border: 1px solid #d8d9da;
   padding: 15px 10px;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 .form .info-1 {
   line-height: 30px;
   font-size: 22px;
+
+  margin-bottom: 10px;
 }
 
 .form .info-1 .input-div {
@@ -75,10 +79,13 @@ form > div {
   width: 100px;
   outline: none;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #fff;
   text-align: center;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #4b4b47;
+  color: #fff;
+  font-weight: bold;
 }
 .form .info-1 .input-div:first-child input {
   width: 40px;
@@ -100,6 +107,8 @@ form .button-input {
   display: grid;
   grid-template-columns: 45px 150px 45px;
   justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 form input {
   color: #292929;
@@ -124,6 +133,12 @@ form .button-input button {
   background-color: white;
   border: 1px solid #b1b3b5;
   cursor: pointer;
+}
+.buttonright {
+  border-radius: 0px 7px 7px 0px;
+}
+.borderleft {
+  border-radius: 7px 0px 0px 7px;
 }
 .info-2 small {
   display: block;
@@ -376,5 +391,5 @@ form .info-3 .info-3-part2 > div:last-child {
 /* Fixing */
 small.errors {
   display: block;
-  color: red;
+  color: #fff;
 }
